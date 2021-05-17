@@ -26,20 +26,12 @@ let buttonClicked = buttonsArray.map(button => button.addEventListener('click', 
     e.target.style.backgroundColor = '#f9b76b';
 }));
 
-/*** Funcionalidades para el campo de contraseña ***/
+/*** Funcionalidad para el campo de contraseña ***/
 
-//Cambiar icono del campo de contraseña si está vacío o no
+//Mostrar/ocultar contraseña
 const passwordField = document.querySelector('.password-input');
 const eyeIcon = document.querySelector('.mdc-text-field__icon--trailing');
 
-passwordField.addEventListener('keyup', () => {
-    eyeIcon.setAttribute('src', 'icons/openeye.svg');
-    if(passwordField.value === ""){
-        eyeIcon.setAttribute('src', 'icons/closeeye.svg');
-    }
-})
-
-//Mostrar/ocultar contraseña
 let hideShowPassword = () => {
 
     if(passwordField.type === "password"){
