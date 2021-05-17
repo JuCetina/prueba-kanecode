@@ -8,7 +8,76 @@
     <title>Kanecode - Iniciar sesión</title>
 </head>
 <body>
+    <section class="slider-section">
+        
+    </section>
 
+    <section class="form-section">
+        <div class="signin-form">
+            <div class="signin-form__text-container">
+                <h1 class="signin-form__title">Iniciar sesión</h1>
+                <p class="signin-form__information">Selecciona como deseas ingresar a la plataforma</p>
+            </div>
+        
+            <div class="signin-form__buttons-container">
+                <button class="social-button social-button--facebook mdc-button">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label"><img src="icons/facebook-f.svg" alt="Facebook"></span>
+                </button>
+                <button class="social-button social-button--google mdc-button">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label"><img src="icons/search.svg" alt="Google"></span>
+                </button>
+                <button class="social-button social-button--linkedin mdc-button">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label"><img src="icons/linkedin.svg" alt="Linkedin"></span>
+                </button>
+            </div>
+                
+            <form action="#" class="signin-form__form-container">
+                <label class="mdc-text-field mdc-text-field--outlined field email">
+                    <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                            <span class="mdc-floating-label field__label" id="email">Correo electrónico</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="email" class="mdc-text-field__input field__input" aria-labelledby="email" pattern=".+@.+\..+" required>
+                </label>
+                <div class="mdc-text-field-helper-line helper">
+                    <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg helper">Debes ingresar un correo electrónico</div>
+                </div>
+                              
+                <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon field password">
+                    <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                            <span class="mdc-floating-label field__label" id="password">Contraseña</span>
+                        </span>
+                        <label for="password" class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="password" class="mdc-text-field__input field__input password-input" aria-labelledby="password" minlength="8" required>
+                    <img class="mdc-text-field__icon mdc-text-field__icon--trailing" src="icons/closeeye.svg" alt="Mostrar contraseña" role="button" tabindex="0">
+                </label>
+                <div class="mdc-text-field-helper-line">
+                    <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg helper">Debes ingresar una contraseña</div>
+                </div>
+                
+                <a href="#" class="signin-form__forgot-password">¿Olvidaste tu contraseña?</a>
+        
+                <button class="signin-form__signin-button mdc-button">
+                    <div class="mdc-buttons__ripple"></div>
+                    <span class="mdc-button__label signin-form__signin-button-label">Iniciar sesión</span>
+                </button>
+            </form>
+        
+            <div class="signin-form__registration-container">
+                <p class="signin-form__registration-text">¿Aún no tienes cuenta?</p>
+                <a class="signin-form__registration-link" href="#">Regístrate</a>
+            </div>
+        </div>
+    </section>
 
     <script src="bundle.js" async></script>
 </body>
