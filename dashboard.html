@@ -4,22 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kancode - Vista general</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bundle.css">
+    <title>Kanecode - Vista general</title>
 </head>
 <body>
     <nav class="menu">
         <ul class="menu__container">
             <div class="menu__up-items">
-                <li class="menu__items"><img class="menu__item-icon" src="icons/" alt="">Prendo</li>
-                <li class="menu__items"><img class="menu__item-icon" src="icons/" alt="">Vista general</li>
-                <li class="menu__items"><img class="menu__item-icon" src="icons/" alt="">Programas y Cursos</li>
-                <li class="menu__items"><img class="menu__item-icon" src="icons/" alt="">Diseña tu sitio</li>
-                <li class="menu__items"><img class="menu__item-icon" src="icons/" alt="">Estudiantes / Clientes</li>
-                <li class="menu__items"><img class="menu__item-icon" src="icons/" alt="">Marketing y ventas</li>
-                <li class="menu__items"><img class="menu__item-icon" src="icons/" alt="">Analítica y reporte</li>
+                <li class="menu__items menu__button">
+                    <img class="menu__item-icon" src="icons/menu.svg" alt="Menú">
+                    <p class="menu__item-text">Prendo</p>
+                </li>
+                <li class="menu__items submenu">
+                    <p class="menu__item-icon">P</p>
+                </li>
+                <li class="menu__items">
+                    <img class="menu__item-icon" src="icons/general.svg" alt="">
+                    <p class="menu__item-text">Vista general</p>
+                </li>
+                <li class="menu__items">
+                    <img class="menu__item-icon" src="icons/programas.svg" alt="">
+                    <p class="menu__item-text">Programas y Cursos</p>
+                </li>
+                <li class="menu__items">
+                    <img class="menu__item-icon" src="icons/design3.svg" alt="">
+                    <p class="menu__item-text">Diseña tu sitio</p>
+                </li>
+                <li class="menu__items">
+                    <img class="menu__item-icon" src="icons/database.svg" alt="">
+                    <p class="menu__item-text">Estudiantes / Clientes</p>
+                </li>
+                <li class="menu__items">
+                    <img class="menu__item-icon" src="icons/lanzadera.svg" alt="">
+                    <p class="menu__item-text">Marketing y ventas</p>
+                </li>
+                <li class="menu__items">
+                    <img class="menu__item-icon" src="icons/analitica.svg" alt="">
+                    <p class="menu__item-text">Analítica y reporte</p>
+                </li>
             </div>
             <div class="menu__down-items">
-                <li class="menu__items"><img class="menu__item-icon" src="icons/" alt="">Configuarción</li>
+                <li class="menu__items">
+                    <img class="menu__item-icon" src="icons/settings-adjust.svg" alt="">
+                    <p class="menu__item-text">Configuración</p>
+                </li>
             </div>
         </ul>
     </nav>
@@ -140,5 +170,6 @@
         </main>
     </section>
 
+    <script src="bundle.js" async></script>
 </body>
 </html>
