@@ -33,9 +33,71 @@ body{
   	font-family: $font;
 }
 
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
 .slider-section{
 	width: 60%;
 	height: 100%;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+	&__logo-container{
+		display: flex;
+		justify-content: center;
+	}
+	&__logo{
+    	position: absolute;
+    	top: 50px;
+    	z-index: 1;
+    	margin: 0px auto;
+	}
+	&__images-list{
+		width: 100%;
+		height: 100%;
+	}
+	&__img-item{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		opacity: 0;
+		transition: opacity .5s;
+	}
+	&__img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-position: center;
+	}
+	&__menu{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		bottom: 100px;
+	}
+	&__menu-button{
+		padding: 8px;
+		border-radius: 50%;
+		display: inline-block;
+		background-color: white;
+		margin-right: 10px;
+	}
+	&__img-item:first-child{
+		opacity: 1;
+	}
+	&__img-item:target{
+		opacity: 1;
+	}
 }
 
 .form-section{
