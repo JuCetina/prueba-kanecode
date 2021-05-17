@@ -212,3 +212,18 @@ li{
 .helper{
   font-family: $font;
 }
+
+@media screen and (max-width: 768px){
+	body{
+		display: block;
+	}
+	.slider-section{
+		width: 100%;
+		height: 35%;
+	} 
+	
+	.form-section{
+		width: 100%;
+		height: 65%;
+	}
+}
