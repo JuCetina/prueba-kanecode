@@ -57,27 +57,31 @@
     <section class="container">
         <div class="bar">
             <div class="bar__search-field">
-                <img class="bar__search-icon" src="icons/" alt="">
+                <img class="bar__search-icon" src="icons/search2.svg" alt="">
                 <input type="text" placeholder="Buscar..." class="bar__input">
             </div>
-            <div class="usermenu">
-                <img src="icons/" alt="Ayuda">
-                <img src="icons/" alt="Notificaciones">
-                <img src="icons/" alt="Mensajes">
-                <img src="icons/" alt="Foto de Liliana Mora">
-                <p>Liliana Mora</p>
-                <img src="icons/" alt="Más">
+            <div class="bar__usermenu">
+                <img class="bar__user-icon" src="icons/help.svg" alt="Ayuda">
+                <img class="bar__user-icon" src="icons/bell.svg" alt="Notificaciones">
+                <img class="bar__user-icon" src="icons/msj.svg" alt="Mensajes">
+                <img class="bar__user-icon picture" src="icons/foto.png" alt="Foto de Liliana Mora">
+                <p class="bar__user-icon">Liliana Mora</p>
+                <img class="bar__user-icon arrow" src="icons/arrow.svg" alt="Más">
             </div>
         </div>
         <main class="dashboard">
-            <p class="dashboard__grettings">Hola Liliana, así van tus programas!</p>
+            <p class="dashboard__grettings">¡Hola Liliana, así van tus programas!</p>
             <div class="dashboard__introduction">
-                <h1 class="dashboard__">Vista general</h1>
+                <h1 class="dashboard__title">Vista general</h1>
                 <div class="dashboard__course-notes">
-                    <img class="dashboard__date-icon" src="icons/" alt="">
-                    <p class="dashboard__date-day">23<span class="dashboard__date-month">nov</span></p>
-                    <p class="dashboard__course">Curso de fotografía de alimentos</p>
-                    <p class="dashboard__course-work">Calificar actividad del módulo 2</p>
+                    <div class="dashboard__calendar">
+                        <img class="dashboard__date-icon" src="icons/calendar.svg" alt="">
+                        <p class="dashboard__date-day">23<span class="dashboard__date-month"> nov</span></p>
+                    </div>
+                    <div class="dashboard__calendar-text">
+                        <p class="dashboard__course-text dashboard__course--title">Curso de fotografía de alimentos</p>
+                        <p class="dashboard__course-text">Calificar actividad del módulo 2</p>
+                    </div>
                 </div>
             </div>
             <div class="dashboard__stats">
@@ -99,7 +103,7 @@
                 </div>
                 <div class="dashboard__my-students-container">
                     <p class="dashboard__my-students-text">Tus estudiantes</p>
-                    <img class="dashboard__my-students-graphic" src="images/" alt="">
+                    <img class="dashboard__my-students-graphic" src="icons/circle.png" alt="">
                 </div>
             </div>
             <div class="dashboard__profits-options-container">
