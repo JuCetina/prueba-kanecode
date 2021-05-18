@@ -1,18 +1,1 @@
-/*** Funcionalidad del menú ***/
-
-let menuButton = document.querySelector('.menu__button');
-let menu = document.querySelector('.menu');
-
-let menuItems = document.querySelectorAll('.menu__items');
-let menuItemsArray = [...menuItems];
-
-let menuTexts = document.querySelectorAll('.menu__item-text');
-let menuTextsArray = [...menuTexts];
-
-const showHideMenu = () => {
-    menu.classList.toggle('is-active');
-    menuItemsArray.map(item => item.classList.toggle('is-active'));
-    menuTextsArray.map(text => text.classList.toggle('is-active'));
-}
-
-menuButton.addEventListener('click', showHideMenu);
+(()=>{function t(t){return function(t){if(Array.isArray(t))return e(t)}(t)||function(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}(t)||function(t,r){if(t){if("string"==typeof t)return e(t,r);var n=Object.prototype.toString.call(t).slice(8,-1);return"Object"===n&&t.constructor&&(n=t.constructor.name),"Map"===n||"Set"===n?Array.from(t):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?e(t,r):void 0}}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function e(t,e){(null==e||e>t.length)&&(e=t.length);for(var r=0,n=new Array(e);r<e;r++)n[r]=t[r];return n}var r=document.querySelector(".menu__button"),n=document.querySelector(".menu"),o=t(document.querySelectorAll(".menu__items")),i=t(document.querySelectorAll(".menu__item-text"));r.addEventListener("click",(function(){n.classList.toggle("is-active"),o.map((function(t){return t.classList.toggle("is-active")})),i.map((function(t){return t.classList.toggle("is-active")}))}))})();
