@@ -1,9 +1,15 @@
 const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: ['./app.scss', './app.js'],
+  // entry: ['./app.scss', './app.js'],
+  entry: {
+    bundle: './app.scss',
+    index: './index.js',
+    home: './home.js'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -49,4 +55,18 @@ module.exports = {
       }
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+        template: './index.html',
+        inject: true,
+        chunks: ['index'],
+        filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+        template: './home.html',
+        inject: true,
+        chunks: ['home'],
+        filename: 'home.html'
+    })
+  ]
 };
