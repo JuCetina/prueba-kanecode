@@ -7,9 +7,9 @@ _Prueba técnica para Desarrollador de Frontend que consta de 3 elementos: Vista
 
 _Para visualización del proyecto en el navegador, ingresar a las siguientes URL:_
 
-Login: Pendiente...
+* Login: https://frontend-kanecode.herokuapp.com/
 
-Home: Pendiente...
+* Home: https://frontend-kanecode.herokuapp.com/home.html
 
 ### Pre-requisitos para instalación 📋
 
