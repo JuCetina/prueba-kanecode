@@ -26,6 +26,7 @@ $google-border-color: #e6edf3;
 $linkedin-color: #0077b7;
 $senary-color: #354BD4;
 $dashboard-color: #f4f5f7;
+$months_color: #1a7de0;
 
 body{
   	margin: 0;
@@ -474,7 +475,7 @@ li{
 	}
 	&__month-text-card{
 		font-size: $sm-letters;
-		color: $quinary-color;
+		color: $months_color;
 		font-weight: $bold;
 		margin: 0;
 	}
