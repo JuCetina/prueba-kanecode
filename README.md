@@ -7,9 +7,9 @@ _Prueba técnica para Desarrollador de Frontend que consta de 3 elementos: Vista
 
 _Para visualización del proyecto en el navegador, ingresar a las siguientes URL:_
 
-* Login: https://frontend-kanecode.herokuapp.com/
+* Login: https://jucetina.github.io/prueba-kanecode/
 
-* Home: https://frontend-kanecode.herokuapp.com/home.html
+* Home: https://jucetina.github.io/prueba-kanecode/home.html (Aquí también se puede visualizar el Menú colapsado)
 
 ### Pre-requisitos para instalación 📋
 
