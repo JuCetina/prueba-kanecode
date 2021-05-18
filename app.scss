@@ -349,7 +349,6 @@ li{
 }
 
 .dashboard{
-	border: 1px solid blue;
 	width: 90%;
 	margin: 60px;
 	&__grettings{
@@ -408,4 +407,88 @@ li{
 		color: #ee5556;
 		font-weight: $bold;
 	}
+	&__stats{
+		width: 100%;
+		height: 200px;
+		background-color: $white-color;
+		border-radius: 20px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__detail-courses-container{
+		width: 80px;
+		height: 120px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&:last-child{
+			width: 300px;
+			border-left: 2px solid $secondary-color;
+			flex-direction: row;
+			justify-content: center;
+			padding-left: 40px;
+		}
+	}
+	&__detail-courses-number{
+		font-weight: $bold;
+		font-size: $xl-letters;
+		color: #222F3E;
+		margin: 0;
+		text-align: center;
+	}
+	&__detail-courses-text{
+		color: #222F3E;
+		margin: 0;
+		text-align: center;
+		line-height: 16px;
+		font-size: $sm-letters;
+	}
+	&__profits-options-container{
+		width: 100%;
+		height: 500px;
+		margin: 30px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__profits{
+		width: 80%;
+		height: 100%;
+		background-color: $white-color;
+		border-radius: 20px;
+	}
+
+
+	&__options-container{
+		width: 20%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+	&__option{
+		width: 90%;
+		height: 100px;
+		background-color: $white-color;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		padding: 15px;
+		box-sizing: border-box;
+		&:nth-child(2){
+			padding-left: 25px;
+		}
+	}
+	&__option-text{
+		color: $quaternary-color;
+		font-size: $sm-letters;
+		margin-left: 10px;
+		line-height: 18px;
+		font-weight: $bold;
+	}
+
+	
+
+
 }
