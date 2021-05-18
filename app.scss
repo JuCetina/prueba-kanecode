@@ -105,73 +105,73 @@ li{
 .form-section{
 	width: 47%;
 	height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
 }
 
 .signin-form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  &__text-container{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	&__text-container{
 		width: 80%;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-  }
-  &__title{
+  	}
+  	&__title{
 		margin-bottom: 0;
 		color: $primary-color;
 		font-size: $lg-letters;
-  }
-  &__information{
+  	}
+  	&__information{
 		margin: 10px 0 30px;
 		color: $secondary-color;
 		font-size: $md-letters;
-  }
-  &__buttons-container{
+  	}
+  	&__buttons-container{
 	  width: 80%;
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 12px;
-  }
-  &__form-container{
-	  width: 80%;
-	  display: flex;
-	  flex-direction: column;
-  }
-  &__forgot-password{
-	  color: $tertiary-color;
-	  font-size: $md-letters;
-	  text-align: right;
-	  margin: 15px 0;
-	  text-decoration: none;
-  }
-  &__signin-button{
-	  width: 275px;
-	  @include button.height(50px);
-	  margin: 5px auto 0;
-	  @include button.container-fill-color($quinary-color);
-	  @include button.shape-radius(70%);
-  }
-  &__signin-button-label{
-	  color: $white-color;
-	  text-transform: none;
-	  font-family: $font;
-	  font-size: $sm-letters;
-	  font-weight: $bold;
-  }
-  &__registration-container{
-	  margin-top: 40px;
-  }
-  &__registration-text{
+  	}
+  	&__form-container{
+	  	width: 80%;
+	  	display: flex;
+	  	flex-direction: column;
+  	}
+  	&__forgot-password{
+	  	color: $tertiary-color;
+	  	font-size: $md-letters;
+	  	text-align: right;
+	  	margin: 15px 0;
+	  	text-decoration: none;
+  	}
+  	&__signin-button{
+	  	width: 275px;
+	  	@include button.height(50px);
+	  	margin: 5px auto 0;
+	  	@include button.container-fill-color($quinary-color);
+	  	@include button.shape-radius(70%);
+  	}
+  	&__signin-button-label{
+	  	color: $white-color;
+	  	text-transform: none;
+	  	font-family: $font;
+	  	font-size: $sm-letters;
+	  	font-weight: $bold;
+  	}
+  	&__registration-container{
+	  	margin-top: 40px;
+  	}
+  	&__registration-text{
 		display: inline-block;
 		font-size: $md-letters;
 		color: $quaternary-color;
-  }
-  &__registration-link{
+  	}
+  	&__registration-link{
 		text-decoration: none;
 		font-size: $md-letters;
 		color: $quinary-color;
@@ -179,21 +179,21 @@ li{
 }
 
 .social-button{
-  @include button.shape-radius(10px);
-  @include button.height(43px);
-  width: 150px;
-  &--facebook{
-	  @include button.container-fill-color($facebook-color);
-	  margin-right: 10px;
-  }
-  &--google{
-	  @include button.container-fill-color($white-color);
-	  border: 2px solid $google-border-color;
-	  margin-right: 10px;
-  }
-  &--linkedin{
-	  @include button.container-fill-color($linkedin-color);
-  }
+  	@include button.shape-radius(10px);
+  	@include button.height(43px);
+  	width: 150px;
+  	&--facebook{
+	  	@include button.container-fill-color($facebook-color);
+	  	margin-right: 10px;
+  	}
+  	&--google{
+	  	@include button.container-fill-color($white-color);
+	  	border: 2px solid $google-border-color;
+	  	margin-right: 10px;
+  	}
+  	&--linkedin{
+	  	@include button.container-fill-color($linkedin-color);
+  	}
 }
 
 .field{
@@ -215,27 +215,18 @@ li{
   font-family: $font;
 }
 
-@media screen and (max-width: 768px){
-	body{
-		display: block;
-	}
-	.slider-section{
-		width: 100%;
-		height: 35%;
-	} 
-	
-	.form-section{
-		width: 100%;
-		height: 65%;
-	}
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
 }
 
 .menu{
-	width: 22%;
+	width: 24%;
 	height: 100%;
-	transition: .3s;
+	transition: .5s;
 	&.is-active{
-		width: 6%;
+		width: 8%;
 	}
 	&__container{
 		width: 100%;
@@ -294,8 +285,8 @@ li{
 	}
 }
 
-.container{
-	width: 100%;
+.main-container{
+	max-width: 100%;
 	height: 100%;
 	overflow: auto;
 	background-color: $dashboard-color;
@@ -309,7 +300,7 @@ li{
 	align-items: center;
 	background-color: $white-color;
 	&__search-field{
-		width: 75%;
+		width: 70%;
 		height: 80%;
 		display: flex;
 		justify-content: flex-start;
@@ -330,11 +321,12 @@ li{
 		outline: none;
 	}
 	&__usermenu{
-		width: 25%;
+		width: 30%;
 		height: 100%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		margin-right: 5px;
 	}
 	&__user-icon{
 		height: 20px;
@@ -452,7 +444,7 @@ li{
 		justify-content: space-between;
 	}
 	&__profits{
-		width: 80%;
+		width: 65%;
 		height: 100%;
 		background-color: $white-color;
 		border-radius: 20px;
@@ -462,6 +454,10 @@ li{
 		width: 100%;
 		height: 70%;
 	}
+
+
+
+
 	&__months{
 		width: 100%;
 		height: 30%;
@@ -486,14 +482,8 @@ li{
 		font-size: $lg-letters;
 		margin: 0;
 	}
-
-
-
-
-
-
 	&__options-container{
-		width: 20%;
+		width: 35%;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
@@ -501,7 +491,7 @@ li{
 		justify-content: space-between;
 	}
 	&__option{
-		width: 90%;
+		width: 86%;
 		height: 100px;
 		background-color: $white-color;
 		border-radius: 20px;
@@ -511,6 +501,16 @@ li{
 		box-sizing: border-box;
 		&:nth-child(2){
 			padding-left: 25px;
+		}
+		&:hover{
+			box-shadow:
+			  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+			  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+			  0 12.5px 10px rgba(0, 0, 0, 0.035),
+			  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+			  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+			  0 100px 80px rgba(0, 0, 0, 0.07)
+			;
 		}
 	}
 	&__option-text{
@@ -534,6 +534,11 @@ li{
 	}
 	&__other-course-video{
 		margin-left: -8px;
+		width: 50%;
+		height: 40%;
+	}
+	&__other-course-text-container{
+		width: 50%;
 	}
 	&__other-course-button{
 		padding: 18px 66px;
@@ -547,4 +552,79 @@ li{
 	}
 
 
+}
+
+@media screen and (max-width: 768px){
+	body{
+		display: block;
+	}
+	
+	.slider-section{
+		width: 100%;
+		height: 35%;
+	} 
+	
+	.form-section{
+		width: 100%;
+		height: 65%;
+	}
+
+	.bar__usermenu {
+		width: 60%;
+	}
+
+	.menu.is-active{
+		width: 11%;
+	}
+	
+	.menu__up-items .menu__button:first-child{
+		font-size: 25px;
+	}
+
+	.dashboard{
+		margin: 38px;
+		&__grettings{
+			font-size: 16px;
+		}
+		&__introduction{
+			align-items: center;
+		}
+		&__title{
+			font-size: 34px;
+		}
+		&__course-text{
+			font-size: 10px;
+		}
+		&__detail-courses-container {
+			justify-content: center;
+		}
+		&__detail-courses-number {
+			font-size: 25px;
+		}
+		&__detail-courses-text {
+			font-size: 11px;
+		}
+		&__detail-courses-container:last-child {
+			width: 210px;
+			border-left: none;
+			padding-left: 0px;
+		}
+		&__profits{
+			width: 100%;
+		}
+		&__profits-options-container{
+			flex-direction: column;
+			height: 700px;
+		}
+		&__options-container{
+			width: 100%;
+			height: 400px;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		&__option{
+			width: 48%;
+		}	
+	}
+	
 }
