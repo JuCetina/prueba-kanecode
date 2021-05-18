@@ -13,7 +13,7 @@ _Para visualización del proyecto en el navegador, ingresar a las siguientes URL
 
 ### Pre-requisitos para instalación 📋
 
-_Tener Node.js instalado en el equipo y también tener la copia del repositorio descargandola en un ZIP o clonándola con Git_
+_Tener Node.js instalado en el equipo y también tener la copia del repositorio descargándola en un ZIP o clonándola con Git_
 
 ### Instalación 🔧
 
@@ -27,7 +27,7 @@ _El comando anterior sirve para instalar todas las dependencias necesarias, desp
 ```
 npm run start
 ```
-_Lo que abrirá automáticamente una pestaña en el navegador con la vista del Login, si se desea visualizar el Home agregar en el navegador al final de la URL resultante: /home.html_
+_Lo que abrirá automáticamente una pestaña en el navegador con la vista del Login, si se desea visualizar la vista del Home agregar en el navegador al final de la URL resultante: /home.html_
 
 ## Construido con 🛠️
 
