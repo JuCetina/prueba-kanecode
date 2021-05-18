@@ -13,7 +13,7 @@ Home: Pendiente...
 
 ### Pre-requisitos para instalación 📋
 
-_Tener Node.js instalado en el equipo y también tener la copia del repositorio descargandola en un ZIP o clonandola con Git_
+_Tener Node.js instalado en el equipo y también tener la copia del repositorio descargandola en un ZIP o clonándola con Git_
 
 ### Instalación 🔧
 
@@ -27,7 +27,7 @@ _El comando anterior sirve para instalar todas las dependencias necesarias, desp
 ```
 npm run start
 ```
-_Lo que abrirá automáticamente una pestaña en el navegador con la vista del Login, si se desea visualizar el Home agregar en el navegador al final de la URL: /home.html_
+_Lo que abrirá automáticamente una pestaña en el navegador con la vista del Login, si se desea visualizar el Home agregar en el navegador al final de la URL resultante: /home.html_
 
 ## Construido con 🛠️
 
@@ -43,5 +43,5 @@ Se utilizó Github como sistema de control de versiones, las cuales se pueden vi
 
 ## Autores ✒️
 
-* **Juliette Cetina** - *Ingeniera de Sistemas* - (https://jucetina.github.io/portafolio)
+* **Juliette Cetina** - *Ingeniera de Sistemas* - [Portafolio](https://jucetina.github.io/portafolio)
 
