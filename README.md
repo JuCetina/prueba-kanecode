@@ -31,11 +31,11 @@ _Lo que abrirá automáticamente una pestaña en el navegador con la vista del L
 
 ## Construido con 🛠️
 
-** HTML5, CSS3, Javascript, Material Design y Webpack.
+* HTML5, CSS3, Javascript, Material Design y Webpack.
 
-** Se utilizó Flex para organizar los elementos, la metodología BEM para el CSS y el preprocesador SASS (SCSS).
+* Se utilizó Flex para organizar los elementos, la metodología BEM para el CSS y el preprocesador SASS (SCSS).
 
-** El Slider del Login se creó con código propio, sin plugins.
+* El Slider del Login se creó con código propio, sin plugins.
 
 ## Versionado 📌
 
