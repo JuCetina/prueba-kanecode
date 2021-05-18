@@ -457,6 +457,11 @@ li{
 		background-color: $white-color;
 		border-radius: 20px;
 	}
+	
+
+
+
+
 
 
 	&__options-container{
@@ -487,8 +492,31 @@ li{
 		line-height: 18px;
 		font-weight: $bold;
 	}
-
-	
+	&__others-container{
+		width: 100%;
+		margin-top: 60px;
+	}
+	&__others-title{
+		font-size: $lg-letters;
+		color: #222F3E;
+		font-weight: $bold;
+	}
+	&__other-course-container{
+		display: flex;
+	}
+	&__other-course-video{
+		margin-left: -8px;
+	}
+	&__other-course-button{
+		padding: 18px 66px;
+		border-radius: 40px;
+		background-color: $white-color;
+		color: $primary-color;
+		margin-top: 10px;
+		border: 1px solid white;
+		font-family: $font;
+		font-weight: $bold;
+	}
 
 
 }
