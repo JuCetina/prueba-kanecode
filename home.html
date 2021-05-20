@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bundle.css">
     <title>Kanecode - Vista general</title>
@@ -62,12 +64,82 @@
                     <input type="text" placeholder="Buscar..." class="bar__input">
                 </div>
                 <div class="bar__usermenu">
-                    <img class="bar__user-icon" src="icons/help.svg" alt="Ayuda">
-                    <img class="bar__user-icon" src="icons/bell.svg" alt="Notificaciones">
-                    <img class="bar__user-icon" src="icons/msj.svg" alt="Mensajes">
-                    <img class="bar__user-icon picture" src="icons/foto.png" alt="Foto de Liliana Mora">
+                    <div class="bar__help">
+                        <img class="bar__user-icon bar__user-icon-help" src="icons/help.svg" alt="Ayuda">
+                        <div class="bar__help-submenu-container bar_submenu">
+                            <div class="bar__help-submenu-list-container">
+                                <h4 class="bar__help-submenu-title bar__help-submenu-title--first">Centro de recursos</h4>
+                                <ul class="bar__help-submenu-list">
+                                    <li class="bar__help-submenu-item">
+                                        <a class="bar__help-submenu-link" href="#"><span class="material-icons bar__help-submenu-icon">piano</span> Tutoriales</a>
+                                    </li>
+                                    <li class="bar__help-submenu-item">
+                                        <a class="bar__help-submenu-link" href="#"><span class="material-icons bar__help-submenu-icon">piano</span> Docs/FAQ</a>
+                                    </li>
+                                    <li class="bar__help-submenu-item">
+                                        <a class="bar__help-submenu-link" href="#"><span class="material-icons bar__help-submenu-icon">piano</span> Webinars</a>
+                                    </li>
+                                    <li class="bar__help-submenu-item">
+                                        <a class="bar__help-submenu-link" href="#"><span class="material-icons bar__help-submenu-icon">piano</span> Comunidad</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bar__help-submenu-list-container">
+                                <h4 class="bar__help-submenu-title bar__help-submenu-title--second">Soporte</h4>
+                                <ul class="bar__help-submenu-list">
+                                    <li class="bar__help-submenu-item">
+                                        <a class="bar__help-submenu-link" href="#"><span class="material-icons bar__help-submenu-icon">piano</span> Chats</a>
+                                    </li>
+                                    <li class="bar__help-submenu-item">
+                                        <a class="bar__help-submenu-link" href="#"><span class="material-icons bar__help-submenu-icon">piano</span> Solicitudes</a>
+                                    </li>
+                                    <li class="bar__help-submenu-item">
+                                        <a class="bar__help-submenu-link" href="#"><span class="material-icons bar__help-submenu-icon">piano</span> Ventas</a>
+                                    </li>
+                                    <li class="bar__help-submenu-item">
+                                        <a class="bar__help-submenu-link" href="#"><span class="material-icons bar__help-submenu-icon">piano</span> Reportar un Bug</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar__notifications">
+                        <img class="bar__user-icon-notifications" src="icons/bell.svg" alt="Notificaciones">
+                        <div class="bar__notifications-submenu bar_submenu">
+                            <h4 class="bar__notifications-submenu-title">Centro de recursos</h4>
+                            <ul class="bar__notifications-submenu-list">
+                                <li class="bar__notifications-submenu-item">
+                                    <a class="bar__notifications-submenu-link" href="#"><span class="material-icons bar__notifiations-submenu-icon">piano</span> Tutoriales</a>
+                                </li>
+                                <li class="bar__notifications-submenu-item">
+                                    <a class="bar__notifications-submenu-link" href="#"><span class="material-icons bar__notifiations-submenu-icon">piano</span> Docs/FAQ</a>
+                                </li>
+                                <li class="bar__notifications-submenu-item">
+                                    <a class="bar__notifications-submenu-link" href="#"><span class="material-icons bar__notifiations-submenu-icon">piano</span> Webinars</a>
+                                </li>
+                                <li class="bar__notifications-submenu-item">
+                                    <a class="bar__notifications-submenu-link" href="#"><span class="material-icons bar__notifiations-submenu-icon">piano</span> Comunidad</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bar__msjs">
+                        <img class="bar__user-icon" src="icons/msj.svg" alt="Mensajes">
+                    </div>
+                    <img class="bar__user-icon bar__user-icon--picture" src="icons/foto.png" alt="Foto de Liliana Mora">
                     <p class="bar__user-icon">Liliana Mora</p>
-                    <img class="bar__user-icon arrow" src="icons/arrow.svg" alt="Más">
+                    <div class="bar__user">
+                        <img class="bar__user-icon bar__user-icon--arrow" src="icons/arrow.svg" alt="Más">
+                        <div class="bar__user-submenu bar_submenu">
+                            <h4 class="bar__user-submenu-title">Centro de recursos</h4>
+                            <ul class="bar__user-submenu-list">
+                                <li class="bar__user-submenu-item">Tutoriales</li>
+                                <li class="bar__user-submenu-item">Docs/FAQ</li>
+                                <li class="bar__user-submenu-item">Webinars</li>
+                                <li class="bar__user-submenu-item">Comunidad</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <main class="dashboard">
