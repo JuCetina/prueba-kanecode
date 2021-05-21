@@ -29,6 +29,8 @@ $senary-color: #354BD4;
 $dashboard-color: #f4f5f7;
 $months_color: #1a7de0;
 $subtitle-color: #ee5253;
+$submenu-scrollbar: #d1d8df;
+$submenu-scrollbar-track: #e9eff5;
 
 body{
   	margin: 0;
@@ -667,6 +669,7 @@ a{
 
 .bar_submenu{
 	position: absolute;
+	top: 43px;
 	right: 0;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -722,8 +725,89 @@ a{
 	margin-right: 20px;
 }
 
+.bar__notifications-submenu{
+	max-height: 300px;
+	overflow: auto;
+	padding: 0;
+}
+
+.bar__notifications-submenu::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+.bar__notifications-submenu::-webkit-scrollbar-thumb {
+	background: $submenu-scrollbar;
+	border-radius: 5px;
+}
+.bar__notifications-submenu::-webkit-scrollbar-thumb:hover {
+	background: $months_color;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.bar__notifications-submenu::-webkit-scrollbar-track {
+    background: $submenu-scrollbar-track;
+    border-radius: 4px;
+}
+
 .bar__notifications-submenu.is-active{
 	opacity: 1;
+}
+
+.bar__notifications-submenu-title{
+	color: $months_color;
+	font-size: $sm-letters;
+	padding: 10px 30px;
+}
+
+.bar__notifications-submenu-list{
+	width: 300px;
+}
+
+.bar__notifications-submenu-item{
+	border-top: 1px solid $submenu-scrollbar;
+	padding: 0px 30px;
+}
+
+.bar__notifications-submenu-item:first-child{
+	font-weight: $bold;
+}
+
+.bar__notifications-submenu-item:hover{
+	background-color: $submenu-scrollbar-track;
+}
+
+.bar__notifications-submenu-link{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: $secondary-color;
+	font-size: $xs-letters;
+}
+
+.bar__notifications-date{
+	margin-left: 33px;
+	color: $tertiary-color;
+}
+
+.bar__notifications-submenu-icon{
+	margin-right: 10px;
+}
+
+.bar__notifications-text-container{
+	margin: 0 0 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.bar__notifications-text{
+	margin: 0;
+	display: inline-block;
+}
+
+.bar__notifications-inner-link{
+	font-size: $xs-letters;
+	color: $months_color;
 }
 
 .bar__user-submenu.is-active{
