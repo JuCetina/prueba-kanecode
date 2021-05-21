@@ -802,7 +802,7 @@ a{
 
 .bar__notifications-text{
 	margin: 0;
-	display: inline-block;
+	color: $primary-color;
 }
 
 .bar__notifications-inner-link{
@@ -810,6 +810,35 @@ a{
 	color: $months_color;
 }
 
+.bar__user-submenu{
+	padding: 0;
+}
+
 .bar__user-submenu.is-active{
 	opacity: 1;
+}
+
+.bar__user-submenu-item{
+	padding: 5px 30px;
+}
+
+.bar__user-submenu-item:last-child{
+	border-top: 1px solid $submenu-scrollbar;
+}
+
+.bar__user-link{
+	color: $secondary-color;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: $xs-letters;
+	transition: .3s;
+}
+
+.bar__user-link:hover{
+	color: $months_color;
+}
+
+.bar__user-submenu-icon{
+	margin-right: 10px;
 }
